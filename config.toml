@@ -1,0 +1,10 @@
+baseURL = "http://note.goharry.dev"
+languageCode = "en-us"
+title = "Harry's Note"
+theme = "paper"
+enableGitInfo = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+[permalinks]
+  posts = "/:year/:month/:filename/"
+  pages = "/:filename/"
