@@ -95,7 +95,7 @@ ul {
 }
 a {
   color: var(--primary);
-  text-decoration: none;
+  text-decoration: underline;
 }
 figure {
   margin: 0;
@@ -157,6 +157,7 @@ img {
 .logo a {
   font-size: 24px;
   font-weight: 600;
+  text-decoration: none;
 }
 .menu {
   display: flex;
@@ -227,7 +228,6 @@ img {
 }
 .footer a:hover {
   color: var(--primary);
-  border-bottom: 1px solid var(--primary);
 }
 /* 404
 -------------------------------------------------- */

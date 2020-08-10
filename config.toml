@@ -8,3 +8,5 @@ hasCJKLanguage = true
 [permalinks]
   posts = "/:year/:month/:filename/"
   pages = "/:filename/"
+[params]
+  repo = "https://github.com/housne/note"
