@@ -6,20 +6,27 @@
     <div class="post-meta">
       {{- if or .Params.author .Site.Params.author }}
       {{- .Params.author | default .Site.Params.author }} · {{ end }}
-      {{- .Date.Format "January 2, 2006" -}}
+      {{- .Date.Format "2006-01-02" -}}
     </div>
   </header>
   <div class="post-content">{{ .Content }}</div>
-  {{- if .Params.tags }}
   <footer class="post-footer">
+    {{- if .Params.tags }}
     <ul class="post-tags">
       {{- range .Params.tags }}
       {{- $href := print (absURL "tags/") (urlize .) }}
       <li><a href="{{ $href }}">{{ . }}</a></li>
       {{- end }}
     </ul>
+    {{- end }}
+    <div class="post-data">
+      <div>
+        <h3>最近更新</h3>
+        {{- .GitInfo.AuthorDate.Format "2006-01-02 03:04" -}} &middot; {{- .GitInfo.Subject -}}
+      </div>
+      {{ .File.Path }}
+    </div>
   </footer>
-  {{- end }}
   <!-- Comments area start -->
   {{- if not (eq .Params.comments false) }}
   {{- if .Site.DisqusShortname }}
@@ -41,5 +48,7 @@
   {{- end }}
   {{- end }}
 </article>
+
+
 
 {{- partial "footer.html" . }}

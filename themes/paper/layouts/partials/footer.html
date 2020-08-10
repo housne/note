@@ -4,9 +4,12 @@
   <span>&middot;</span>
   <span>Based on Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
 </footer>
+{{- if .IsPage }}
 <script src="{{ "highlight.min.js" | absURL }}"></script>
 <script>
   hljs.initHighlightingOnLoad();
 </script>
+{{- end }}
+
 </body>
 </html>
