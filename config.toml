@@ -1,10 +1,11 @@
-baseURL = "http://note.goharry.dev"
+baseURL = "https://note.goharry.dev"
 languageCode = "en-us"
 title = "Harry's Note"
 theme = "paper"
 enableGitInfo = true
 enableRobotsTXT = true
 hasCJKLanguage = true
+description = "Harry 的日常笔记"
 [permalinks]
   posts = "/:year/:month/:filename/"
   pages = "/:filename/"

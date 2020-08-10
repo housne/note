@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Title -->
-    <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+    <title>{{ if and (not $.IsHome) .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
     <!-- Meta -->
     {{- if eq .Kind "page" }}
     <meta name="description" content="{{ .Summary }}">
@@ -14,6 +14,9 @@
     <meta name="description" content="{{ .Site.Params.description }}">
     <meta name="author" content="{{ .Site.Params.author }}">
     {{- end }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/schema.html" . }}
     <!-- Styles -->
     {{ $baseCSS := resources.Get "css/base.css" | resources.Minify }}
     {{ $highlightCSS := resources.Get "css/an-old-hope.min.css" }}

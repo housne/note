@@ -20,12 +20,13 @@
     </ul>
     {{- end }}
     <div class="post-data">
+      {{- with .GitInfo }}
       <div class="git-info">
         <h3>最近更新</h3>
-        {{- .GitInfo.AuthorDate.Format "2006-01-02 03:04" -}}<i style="padding: 0 5px">&middot;</i>{{- .GitInfo.Subject -}}
+        {{- .AuthorDate.Format "2006-01-02 03:04" -}}<i style="padding: 0 5px">&middot;</i>{{- .Subject -}}
       </div>
+      {{- end }}
       <a href="{{ .Site.Params.repo }}/edit/master/content/{{ .File.Path }}">编辑文章</a>
-      
     </div>
   </footer>
   <!-- Comments area start -->
