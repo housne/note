@@ -50,7 +50,8 @@
     <!-- Script -->
   </head>
   <body>
-    {{ $themeJS := resources.Get "js/theme.js" | resources.Minify }}
+    {{ $opts := dict "minify" "true" }}
+    {{ $themeJS := resources.Get "js/theme.js" | js.Build $opts }}
     <script>
       {{ $themeJS.Content | safeJS }}
     </script>

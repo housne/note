@@ -5,7 +5,8 @@
   <span>Based on Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
   <button id="theme-switcher"></button>
 </footer>
-{{ $themeSwitcherJS := resources.Get "js/theme-switcher.js" | resources.Minify }}
+{{ $opts := dict "minify" "true" }}
+{{ $themeSwitcherJS := resources.Get "js/theme-switcher.js" | js.Build $opts }}
 <script>
   {{ $themeSwitcherJS.Content | safeJS }}
 </script>
