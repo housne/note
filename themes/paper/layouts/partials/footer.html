@@ -3,7 +3,12 @@
   <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ .Site.Title }}</a></span>
   <span>&middot;</span>
   <span>Based on Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+  <button id="theme-switcher"></button>
 </footer>
+{{ $themeSwitcherJS := resources.Get "js/theme-switcher.js" | resources.Minify }}
+<script>
+  {{ $themeSwitcherJS.Content | safeJS }}
+</script>
 {{- if .IsPage }}
 <script src="{{ "highlight.min.js" | absURL }}"></script>
 <script>
