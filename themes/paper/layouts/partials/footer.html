@@ -16,6 +16,19 @@
   hljs.initHighlightingOnLoad();
 </script>
 {{- end }}
+{{ if not (eq .Hugo.Environment "development") }}
+<script>
+// Check that service workers are supported
+if ('serviceWorker' in navigator) {
+  // Use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
+{{ end }}
+
+
 
 </body>
 </html>

@@ -47,7 +47,7 @@
     {{- template "_internal/google_analytics_async.html" . }}
     {{- template "_internal/opengraph.html" . }}
     {{- end }}
-    <!-- Script -->
+    <link rel="manifest" href="/manifest.json">
   </head>
   <body>
     {{ $opts := dict "minify" "true" }}
