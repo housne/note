@@ -15,7 +15,7 @@
 {{- else if .Data.Term }}
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
-<a class="entry-link" href="{{ .Permalink }}">
+<a class="entry-link" href="{{ .Permalink }}" title="{{ .Title }}">
   <article class="{{ $class }}">
     <header class="entry-header">
       <h2>{{ .Title }}</h2>
