@@ -7,7 +7,7 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 description = "Harry 的日常笔记"
 [permalinks]
-  posts = "/:year/:month/:filename"
-  pages = "/:filename"
+  posts = "/:year/:month/:filename/"
+  pages = "/:filename/"
 [params]
   repo = "https://github.com/housne/note"

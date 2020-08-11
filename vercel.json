@@ -1,5 +1,5 @@
 {
-  "trailingSlash": false,
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/(.*)",
@@ -19,9 +19,7 @@
       ]
     }
   ],
-  "build": {
-    "env": {
-      "HUGO_VERSION": "0.73.0"
-    }
+  "github": {
+    "enabled": false
   }
 }
