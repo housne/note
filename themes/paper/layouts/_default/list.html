@@ -43,4 +43,8 @@
 </footer>
 {{- end }}
 
+{{ if .Data.Plural }}
+  <a class="button" href="{{ "/" | relLangURL}}{{ .Data.Plural | urlize }}">All {{.Data.Plural}}</a>
+{{ end }}
+
 {{- partial "footer.html" . }}

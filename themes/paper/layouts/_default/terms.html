@@ -1,0 +1,12 @@
+{{- partial "header.html" . }}
+<header class="page-header"><h1>{{ .Title }}</h1></header>
+
+<div class="tag-list">
+{{- range $index, $page := .Pages }}
+<a class="button" href="{{ .Permalink }}" title="{{ .Title }}">
+  {{ .Title }}
+</a>
+{{- end }}
+</div>
+
+{{- partial "footer.html" . }}

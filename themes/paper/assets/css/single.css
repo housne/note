@@ -196,20 +196,6 @@
 .post-tags li + li {
   margin-left: 3px;
 }
-.post-tags a {
-  display: block;
-  padding-left: 14px;
-  padding-right: 14px;
-  color: var(--secondary);
-  font-size: 14px;
-  line-height: 34px;
-  background: var(--code-bg);
-  border-radius: 4px;
-  text-decoration: none;
-}
-.post-tags a:hover {
-  background: var(--border);
-}
 .post-data {
   margin-top: 56px;
   color: var(--secondary);
