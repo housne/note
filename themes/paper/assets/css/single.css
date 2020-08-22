@@ -15,6 +15,7 @@
 }
 .post-content {
   color: var(--content);
+  text-align: justify;
 }
 .post-content h1 {
   margin-top: 40px;
