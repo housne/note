@@ -21,13 +21,13 @@ Three days later, the result shows the tumor  is malignant, it's human papillary
 
 ![thyroid cancer](./thyroid-cancer.jpeg)
 
-However, the hospital’s beds are tight and I need to wait for one to two weeks. After leaving my phone number, I waited for the hospital to call me while I was at work. After more than a week, the hospital still didn’t call me. I called the hospital to inquire about the progress. I was a little anxious and registered another hospital. This hospital arranged for the next day of hospitalization and surgery next week.
+However, the hospital’s beds are tight and I need to wait for one to two weeks. After signup my phone number, I waited for the hospital to call me while I was at work. After more than a week, the hospital still didn’t call me. I called the hospital to inquire about the progress. I was a little anxious and registered another hospital. This hospital arranged for the next day of hospitalization and surgery next week.
 
 ## Surgery
 
-住院前几天除了做了一些常规的术前检查，其他时间和平常一样活蹦乱跳，还抽空爬了医院旁边的一座小山。手术前一天医生会进行术前谈话，告知手术方案、手术风险、特殊费用之类的，然后签风险告知书。手术前一晚10点钟以后不能进食进水，护士也会在手术提前一天通知注意事项。
+First days of the hospitalization, there are some routine preoperative examinations, the rest of the time was as usual, and I even climbed a hill next to the hospital. The day before surgery, the doctor talked to me about the surgical plan, surgical risk and special fee, then I signed the risk notice. No food or water is allowed after 10 o'clock the night before the surgery, and the nurse will also notify the precautions one day before the surgery.
 
-手术当天，我是安排的当天第一台手术，7点半的时候护士就把我们带到了手术楼层，在进入手术室之前做了一些身份信息的确认，然后坐上轮椅，推到手术室门口前等待。等了大概十几分钟，推进了手术室，脱掉上衣，换上手术服，头向后仰平躺在手术台上。麻醉师又做了一次确认，插入针管，带上氧气面罩，麻醉师轻轻的说开始睡觉咯，麻醉师开始向针管推入麻醉药剂，不到十秒钟的时间我就渐渐失去知觉。
+The day of surgery, I was the first one, the nurse guided us to the surgery floor at 7:30 am，The day of surgery, I was the first one, the nurse guided us to the surgery floor at 7:30 am。等了大概十几分钟，推进了手术室，脱掉上衣，换上手术服，头向后仰平躺在手术台上。麻醉师又做了一次确认，插入针管，带上氧气面罩，麻醉师轻轻的说开始睡觉咯，麻醉师开始向针管推入麻醉药剂，不到十秒钟的时间我就渐渐失去知觉。
 
 醒来的时候我模模糊糊听到有人喊我的名字，让我确认我叫什么名字，当时神智不清，艰难的说了自己的名字，感觉是有人围着把我往病房推。当我意识稍微清醒一点的时候我已经躺在病床上了，想着要发消息报平安，当时就拿手机乱按了一通，然后又睡着了。
 
