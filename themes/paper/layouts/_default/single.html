@@ -22,11 +22,11 @@
     <div class="post-data">
       {{- with .GitInfo }}
       <div class="git-info">
-        <h3>最近更新</h3>
+        <h3>{{ i18n "latest_update" }}</h3>
         {{- .AuthorDate.Format "2006-01-02 03:04" -}}<i style="padding: 0 5px">&middot;</i>{{- .Subject -}}
       </div>
       {{- end }}
-      <a href="{{ .Site.Params.repo }}/edit/master/content/{{ .File.Path }}">编辑文章</a>
+      <a href="{{ .Site.Params.repo }}/edit/master/content/{{ .File.Path }}">{{ i18n "edit_article" }}</a>
     </div>
   </footer>
   <!-- Comments area start -->

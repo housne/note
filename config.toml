@@ -1,13 +1,23 @@
 baseURL = "https://note.goharry.dev"
-languageCode = "en-us"
+languageCode = "zh-cn"
 title = "Harry's Note"
 theme = "paper"
 enableGitInfo = true
 enableRobotsTXT = true
 hasCJKLanguage = true
+DefaultContentLanguage = "zh"
 [permalinks]
   posts = "/:year/:month/:filename/"
   pages = "/:filename/"
 [params]
   repo = "https://github.com/housne/note"
   description = "Harry 的日常笔记"
+[languages]
+  [languages.zh]
+    title = "Harry的笔记"
+    weight = 0
+  [languages.en]
+    title = "Harry's Note"
+    weight = 1
+
+

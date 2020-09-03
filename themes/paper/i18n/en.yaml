@@ -3,3 +3,9 @@
 
 - id: next_page
   translation: "Next Page"
+
+- id: latest_update
+  translation: "Latest Update"
+
+- id: edit_article
+  translation: "Edit"
