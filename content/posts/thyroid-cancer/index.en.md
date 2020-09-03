@@ -13,7 +13,7 @@ The report came out after one week, the nodules are benign and do not need to be
 
 ## Diagnose
 
-第二天彩超，这次医院做彩超的小姐姐认真多了，来来回回照了很多次，小姐姐后来表情和语气有些凝重了，有肿瘤，边缘不规则，体积 6x5x5mm，当天转超声介入，预约三天后做穿刺。到这时感觉有点严重了，一般来说良性的话彩超就能观察出来，如果需要穿刺的话大半估计是恶性的了。
+On the second day of color Doppler ultrasound, the nurse in hospital was more serious this time. After many times of check, the nurse's expression and tone became a little dignified, there's a tumors, irregular edges, and a volume of 6x5x5mm. I was transferred to ultrasound intervention on the same day. Make an appointment three days later for puncture. At this point, I feels a bit serious. Generally speaking, it can be observed by color Doppler ultrasound if it is benign. If puncture is required, it is probably malignant.
 
 三天后穿刺没有想象中的那么痛苦，打完麻药后，从喉咙穿针进去，然后取肿瘤中的组织细胞，全程不会感觉到疼痛，但是针在喉咙里剐细胞的那种感觉会让人很不舒服，那种剐东西的声音会让人有点头痛。做完穿刺当天挂号甲乳外科，看三天后的结果。
 
