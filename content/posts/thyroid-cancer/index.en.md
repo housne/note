@@ -15,15 +15,15 @@ The report came out after one week, the nodules are benign and do not need to be
 
 On the second day of color Doppler ultrasound, the nurse in hospital was more serious this time. After many times of check, the nurse's expression and tone became a little dignified, there's a tumors, irregular edges, and a volume of 6x5x5mm. I was transferred to ultrasound intervention on the same day. Make an appointment three days later for puncture. At this point, I feels a bit serious. Generally speaking, it can be observed by color Doppler ultrasound if it is benign. If puncture is required, it is probably malignant.
 
-三天后穿刺没有想象中的那么痛苦，打完麻药后，从喉咙穿针进去，然后取肿瘤中的组织细胞，全程不会感觉到疼痛，但是针在喉咙里剐细胞的那种感觉会让人很不舒服，那种剐东西的声音会让人有点头痛。做完穿刺当天挂号甲乳外科，看三天后的结果。
+Three days later, the puncture was not as painful as expected. After the anesthetic, a needle is inserted through the throat and get  tissue cells from the tumor, no pain during the whole puncture, but the feeling of the needle slashing the cells in the throat can be very uncomfortable, and the sound of slashing things can make you a little headache.
 
-三天后结果出来果然是恶性，甲状腺人体乳头状癌，万幸的是发现得很及时，还处在非常早期，未转移到淋巴。医生建议手术切除一半的甲状腺，以免进一步恶化转移。
+Three days later, the result shows the tumor  is malignant, it's human papillary carcinoma of the thyroid. Fortunately, it is still very early and has not metastasized to the lymph. The doctor recommends surgery to remove half of the thyroid gland to avoid further deterioration of the metastasis. 
 
 ![thyroid cancer](./thyroid-cancer.jpeg)
 
-但医院床位紧张，需要等待一到两周，留下了电话号码后，边上班边等医院给我打电话，一周多以后医院还是没有给我打电话，打电话到医院询问进程，一直联系不到医生。开始有些焦急，挂了另外一家医院的号，这家医院安排了第二天住院，下周手术。
+However, the hospital’s beds are tight and I need to wait for one to two weeks. After leaving my phone number, I waited for the hospital to call me while I was at work. After more than a week, the hospital still didn’t call me. I called the hospital to inquire about the progress. I was a little anxious and registered another hospital. This hospital arranged for the next day of hospitalization and surgery next week.
 
-## 手术
+## Surgery
 
 住院前几天除了做了一些常规的术前检查，其他时间和平常一样活蹦乱跳，还抽空爬了医院旁边的一座小山。手术前一天医生会进行术前谈话，告知手术方案、手术风险、特殊费用之类的，然后签风险告知书。手术前一晚10点钟以后不能进食进水，护士也会在手术提前一天通知注意事项。
 
