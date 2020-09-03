@@ -1,5 +1,4 @@
-{{- partial "header.html" . }}
-
+{{ define "main" }}
 {{- $scope := .Site }}
 {{- if and ( not $.IsHome) .Title }}
 <header class="page-header"><h1>{{ .Title }}</h1></header>{{ $scope = . }}
@@ -47,4 +46,4 @@
   <a class="button" href="{{ "/" | relLangURL}}{{ .Data.Plural | urlize }}">All {{.Data.Plural}}</a>
 {{ end }}
 
-{{- partial "footer.html" . }}
+{{ end }}

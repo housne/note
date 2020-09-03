@@ -15,6 +15,9 @@
 }
 .post-content {
   color: var(--content);
+  word-wrap: break-word;
+}
+.zh .post-content {
   text-align: justify;
 }
 .post-content h1 {

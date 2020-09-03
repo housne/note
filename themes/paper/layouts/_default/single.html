@@ -1,4 +1,4 @@
-{{- partial "header.html" . }}
+{{ define "main" }}
 
 <article class="post-single">
   <header class="post-header">
@@ -14,7 +14,7 @@
     {{- if .Params.tags }}
     <ul class="post-tags">
       {{- range .Params.tags }}
-      {{- $href := print (absURL "tags/") (urlize .) }}
+      {{- $href := print (relLangURL "tags/") (urlize .) }}
       <li><a href="{{ $href }}" class="button">{{ . }}</a></li>
       {{- end }}
     </ul>
@@ -53,4 +53,4 @@
 
 
 
-{{- partial "footer.html" . }}
+{{ end }}

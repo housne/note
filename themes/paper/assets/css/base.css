@@ -150,6 +150,7 @@ img {
 .nav a {
   display: block;
   line-height: var(--header-height);
+  text-decoration: none;
 }
 .logo,
 .menu {

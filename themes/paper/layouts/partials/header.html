@@ -1,76 +1,24 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Title -->
-    <title>{{ if and (not $.IsHome) .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
-    <!-- Meta -->
-    {{- if eq .Kind "page" }}
-    <meta name="description" content="{{ .Summary }}">
-    <meta name="author" content="{{ .Params.author | default .Site.Params.author }}">
-    {{- else }}
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <meta name="author" content="{{ .Site.Params.author }}">
-    {{- end }}
-    {{ template "_internal/twitter_cards.html" . }}
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/schema.html" . }}
-    <!-- Styles -->
-    {{ $baseCSS := resources.Get "css/base.css" | resources.Minify }}
-    {{ $highlightCSS := resources.Get "css/an-old-hope.min.css" }}
-    {{ $singleCSS := resources.Get "css/single.css" | resources.Minify }}
-    {{ $singleStyle := slice $singleCSS $highlightCSS  | resources.Concat "css/bundle.css" }}
-    {{ $listStyle := resources.Get "css/list.css" | resources.Minify }}
-    <style type="text/css">
-      {{ $baseCSS.Content | safeCSS }}
-      {{- if .IsPage }}
-      {{ $singleStyle.Content | safeCSS }}
+<header class="header">
+  <nav class="nav">
+    <h1 class="logo"><a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a></h1>
+    {{- if .Site.Menus.main }}
+    <ul class="menu">
+      {{- range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
       {{- end }}
-      {{- if .IsNode}}
-      {{ $listStyle.Content | safeCSS }}
-      {{- end }}
-    </style>
-    
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
-    <link rel="icon" href="{{ "favicon.ico" | absURL }}">
-    <!-- Generator -->
-    {{- hugo.Generator }}
-    <!-- RSS -->
-    {{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
-    <!-- Misc -->
-    {{- if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production") }}
-    {{- template "_internal/google_analytics_async.html" . }}
-    {{- template "_internal/opengraph.html" . }}
+    </ul>
     {{- end }}
-    <link rel="manifest" href="/manifest.json">
-  </head>
-  <body>
-    {{ $opts := dict "minify" "true" }}
-    {{ $themeJS := resources.Get "js/theme.js" | js.Build $opts }}
-    <script>
-      {{ $themeJS.Content | safeJS }}
-    </script>
-    <header class="header">
-      <nav class="nav">
-        {{- if .IsHome }}
-        <h1 class="logo"><a href="{{ "" | absURL }}">{{ .Site.Title }}</a></h1>
-        {{- else }}
-        <p class="logo"><a href="{{ "" | absURL }}">{{ .Site.Title }}</a></p>
-        {{- end }}
-        {{- if .Site.Menus.main }}
-        <ul class="menu">
-          {{- range .Site.Menus.main }}
-          <li>
-            <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-          {{- end }}
-        </ul>
-        {{- end }}
-      </nav>
-    </header>
-    <main class="main">
+    {{ range .Site.Languages }}
+      {{ if not (eq $.Site.Language.Lang .Lang) }}
+        {{ $relURL := .Lang }}
+        {{ if eq .Lang "zh"}}
+          {{ $relURL = "" }}
+        {{ end }}
+      <a href="/{{$relURL}}" class="i18n-link">{{ .LanguageName }}</a>
+      {{ end }}
+    {{ end }}
+  </nav>
+</header>
+   
