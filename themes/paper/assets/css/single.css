@@ -72,6 +72,11 @@
 .post-content dl {
   margin-bottom: var(--content-gap);
 }
+.post-content img {
+  margin-left: calc(var(--gap) * -1);
+  margin-right: calc(var(--gap) * -1);
+  max-width: calc(100% + var(--gap) * 2);
+}
 .post-content ul,
 .post-content ol {
   padding-left: 20px;

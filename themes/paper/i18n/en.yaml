@@ -9,3 +9,6 @@
 
 - id: edit_article
   translation: "Edit"
+
+- id: subscribe
+  translation: "Subscribe"

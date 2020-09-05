@@ -10,6 +10,9 @@
       {{- end }}
     </ul>
     {{- end }}
+    <!-- {{ with .OutputFormats.Get "rss" }}
+      <a href="{{.Permalink}}" class="rss-link">{{ i18n "subscribe" }}</a>
+    {{ end }} -->
     {{ range .Site.Languages }}
       {{ if not (eq $.Site.Language.Lang .Lang) }}
         {{ $relURL := .Lang }}

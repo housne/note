@@ -9,3 +9,7 @@
 
 - id: edit_article
   translation: "编辑文章"
+
+- id: subscribe
+  translation: "订阅"
+

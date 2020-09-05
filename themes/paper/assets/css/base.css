@@ -143,7 +143,6 @@ img {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 0 var(--gap);
   background: var(--entry);
 }
@@ -151,6 +150,7 @@ img {
   display: block;
   line-height: var(--header-height);
   text-decoration: none;
+  margin-left: var(--gap);
 }
 .logo,
 .menu {
@@ -159,11 +159,13 @@ img {
 }
 .logo {
   margin-left: 0;
+  flex: 1;
 }
 .logo a {
   font-size: 24px;
   font-weight: 600;
   text-decoration: none;
+  margin: 0;
 }
 .menu {
   display: flex;
