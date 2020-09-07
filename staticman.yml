@@ -13,7 +13,7 @@ comments:
   # reject posts without all of these fields
   requiredFields: ["name", "email", "message"]
 
-  allowedFields: ["name", "email", "message"]
+  allowedFields: ["name", "email", "message", "website"]
 
   branch: "master"
 

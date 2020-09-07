@@ -1,0 +1,68 @@
+{{ $slug := replace .RelPermalink "/" "-" }}
+{{ $slug = substr $slug 1 -1 }}
+<section class="post-comment">
+  <section class="comment-form">
+  <h3 class="comment-section-title">{{i18n "createComment"}}</h3>
+  <form method="POST" action="{{.Site.Params.staticmanURL}}" id="staticman_form" class="staticman-form">
+    <textarea name="fields[message]" required></textarea>
+    <div class="input-row">
+      <input name="options[slug]" value="{{$slug}}" type="hidden" readonly />
+      <input name="fields[name]" placeholder="{{i18n "name"}}" required />
+      <input name="fields[email]" placeholder="{{i18n "email"}}" required />
+      <input name="fields[website]" placeholder="{{i18n "website"}}" required />
+    </div>
+    <button class="button" id="comment_submit_button">{{i18n "submit"}}</button>
+  </form>
+  </section>
+
+  <section class="comment-list">
+  {{ if .Site.Data.comments }}
+    {{ $comments := index $.Site.Data.comments $slug }}
+    {{ if $comments }}
+      {{ if gt (len $comments) 1  }}
+        <h3 class="comment-section-title">{{ len $comments  }} {{ i18n "moreComment" }}</h3>
+      {{ else }}
+        <h3 class="comment-section-title">{{ len $comments  }} {{ i18n "oneComment" }}</h3>
+      {{ end }}
+    {{ else }}
+      <h3 class="comment-section-title no-comment">{{ i18n "noComment" }}</h3>
+    {{ end }}
+
+
+    {{ $.Scratch.Set "hasComments" 0 }}
+    {{ range $index, $comments := (index $.Site.Data.comments $slug ) }}
+      {{ if not .parent }}
+        {{ $.Scratch.Add "hasComments" 1 }}
+        <article id="comment-{{ $.Scratch.Get "hasComments" }}" class="static-comment">
+          <div class="comment-head">
+            <img class="comment-avatar" src="https://cdn.v2ex.com/gravatar/{{ .email }}?s=48">
+            <div class="comment-meta">
+              {{ if .website }}
+              <h4 class="comment-author">
+                <a rel="external nofollow" href="{{ .website }}">{{ .name }}</a>
+              </h4>
+              {{ else }}
+              <h4 class="comment-author">{{ .name }}</h4>
+              {{ end }}
+              <a href="#comment-{{ $.Scratch.Get "hasComments" }}" class="comment-timestamp" title="Permalink to this comment">
+                <time datetime="{{ .date }}">{{dateFormat "2006-01-02" .date}}</time>
+              </a>
+            </div>
+          </div>
+          <div class="comment-content"><p>{{ .message | markdownify }}</p></div>
+        </article>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  </section>
+</section>
+<script>
+  window.COMMENT_SUBMIT_SUCCESS_MESSAGE = '{{i18n "commentSuccessMessage"}}'
+  window.COMMENT_SUBMIT_FAIL_MESSAGE = '{{i18n "commentFailMessage"}}'
+</script>
+
+{{ $opts := dict "minify" "true" }}
+{{ $commentJS := resources.Get "js/comment.js" | js.Build $opts }}
+<script>
+  {{ $commentJS.Content | safeJS }}
+</script>

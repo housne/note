@@ -10,6 +10,7 @@ DefaultContentLanguage = "zh"
 [params]
   repo = "https://github.com/housne/note"
   description = "Harry 的日常笔记"
+  staticmanURL = "https://comment-goharry.herokuapp.com/v2/entry/housne/note/master/comments"
 [languages]
   [languages.zh]
     languageName = "中文"

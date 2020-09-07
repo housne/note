@@ -13,3 +13,32 @@
 - id: subscribe
   translation: "订阅"
 
+- id: name
+  translation: "称呼"
+
+- id: email
+  translation: "邮箱"
+
+- id: website
+  translation: "网站"
+
+- id: submit
+  translation: "提交"
+
+- id: createComment
+  translation: "添加评论"
+
+- id: moreComment
+  translation: "条评论"
+
+- id: oneComment
+  translation: "条评论"
+
+- id: noComment
+  translation: "暂无评论"
+
+- id: commentSuccessMessage
+  translation: "发表成功，请等待审核"
+
+- id: commentFailMessage
+  translation: "发表失败，请稍后重试"

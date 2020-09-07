@@ -165,7 +165,7 @@
   margin-right: 4px;
   padding: 4px 6px;
   font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
-  font-size: 0.78em;
+  font-size: 0.9rem;
   line-height: 1.5;
   background: var(--code-bg);
   border-radius: 2px;
@@ -211,4 +211,55 @@
 }
 .git-info {
   margin-bottom: var(--gap);
+}
+.staticman-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  height: 8rem;
+}
+.staticman-form .input-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 10px;
+}
+
+.staticman-form .input-row input {
+  width: calc((100% - 20px) / 3);
+}
+
+.static-comment {
+  background: var(--entry);
+  border-radius: var(--radius);
+  padding: 15px;
+  margin-bottom: 1rem;
+}
+.comment-head {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.comment-avatar {
+  border-radius: var(--radius);
+  margin-right: 15px;
+}
+.comment-timestamp {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.comment-meta {
+  flex: 1;
+}
+.comment-section-title {
+  margin: 1rem 0;
+}
+.comment-section-title.no-comment {
+  color: var(--secondary);
+}
+.post-comment {
+  padding-top: 1rem;
+}
+.comment-list {
+  padding-top: 1rem;
 }

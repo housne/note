@@ -12,3 +12,33 @@
 
 - id: subscribe
   translation: "Subscribe"
+
+- id: name
+  translation: "Name"
+
+- id: email
+  translation: "Email"
+
+- id: website
+  translation: "Website"
+
+- id: submit
+  translation: "Submit"
+
+- id: createComment
+  translation: "Add Comment"
+
+- id: moreComment
+  translation: "Comments"
+
+- id: oneComment
+  translation: "Comment"
+
+- id: noComment
+  translation: "No Comments"
+
+- id: commentSuccessMessage
+  translation: "Success, please wait to approve"
+
+- id: commentFailMessage
+  translation: "Fail, please retry later"
