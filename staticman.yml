@@ -17,9 +17,18 @@ comments:
 
   branch: "master"
 
-  path: "data/comments"
-
   format: "yml"
+
+  generatedFields:
+    date:
+      type: date
+  
+  moderation: true
+
+  path: "data/comments/{options.slug}"
+
+  transforms:
+    email: md5
 
 
 
