@@ -13,6 +13,16 @@ comments:
   # reject posts without all of these fields
   requiredFields: ["name", "email", "message"]
 
+  allowedFields: ["name", "email", "message"]
+
+  branch: "master"
+
+  path: "data/comments"
+
+  format: "yml"
+
+
+
   # you are going to want reCaptcha set up, but for now leave it disabled because we need the API
   # bridge up and running in order to encrypt the secrets that go in this section
   reCaptcha:
