@@ -196,7 +196,7 @@
   max-width: 100%;
 }
 .post-footer {
-  margin-top: 56px;
+  margin-top: var(--content-gap);
 }
 .post-tags li {
   display: inline-block;
@@ -240,7 +240,7 @@
   padding-bottom: 10px;
 }
 .comment-avatar {
-  border-radius: var(--radius);
+  border-radius: 50%;
   margin-right: 15px;
 }
 .comment-timestamp {
@@ -258,8 +258,19 @@
   color: var(--secondary);
 }
 .post-comment {
-  padding-top: 1rem;
+  margin-top: var(--content-gap);
 }
 .comment-list {
   padding-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .staticman-form .input-row {
+    display: block;
+  }
+  
+  .staticman-form .input-row input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
