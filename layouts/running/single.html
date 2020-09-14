@@ -2,7 +2,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <h1 class="post-title">{{ .Title }}</h1>
+    <h1 class="post-title">{{- .Date.Format "2006-01-02" -}}跑步记录</h1>
     <div class="post-meta">
       {{- if or .Params.author .Site.Params.author }}
       {{- .Params.author | default .Site.Params.author }} · {{ end }}

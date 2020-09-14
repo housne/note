@@ -1,0 +1,30 @@
+{{ with .Get 0 }}
+  {{ $date := . }}
+  {{ $year := substr $date 0 4 }}
+  {{ $month := substr $date 5 2 }}
+  {{ $day := substr $date 8 2 }}
+  {{ with index $.Page.Site.Data.running $year $month $day }}
+    <table>
+      <tr>
+        <td width="25%">距离</td>
+        <td width="75%">{{ .distance }} KM</td>
+      </tr>
+      <tr>
+        <td width="25%">时长</td>
+        <td width="75%">{{ .duration }} 分钟</td>
+      </tr>
+      <tr>
+        <td width="25%">配速</td>
+        {{ $minutes := math.Floor (div .duration .distance) }}
+        {{ $seconds := mul (div (mod .duration .distance) .distance) 60 }}
+        <td width="75%">{{ $minutes }}'{{ math.Floor $seconds }}''</td>
+      </tr>
+      <tr>
+        <td width="25%">心率</td>
+        <td width="75%">{{ .heartRate }} 次/分</td>
+      </tr>
+    </table>
+  {{ else }}
+  {{ errorf "missing value for running record: %s-%s-%s" $year $month $day }}
+  {{ end }}
+{{ end }}

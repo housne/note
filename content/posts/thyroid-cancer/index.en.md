@@ -1,5 +1,5 @@
 ---
-title: "Treatment of Thyroid cancer"
+title: "Thyroid cancer"
 date: 2020-08-14T10:38:04+08:00
 draft: false
 tags:

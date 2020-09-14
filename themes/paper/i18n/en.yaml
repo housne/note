@@ -42,3 +42,6 @@
 
 - id: commentFailMessage
   translation: "Fail, please retry later"
+
+- id: allTags
+  translation: "All Tags"

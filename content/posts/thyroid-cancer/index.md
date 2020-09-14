@@ -1,5 +1,5 @@
 ---
-title: "甲状腺癌症治疗"
+title: "甲状腺癌症"
 date: 2020-08-14T10:38:04+08:00
 draft: false
 tags:

@@ -4,9 +4,11 @@ theme = "paper"
 enableGitInfo = true
 enableRobotsTXT = true
 DefaultContentLanguage = "zh"
+Paginate = 5
 [permalinks]
   posts = "/:year/:month/:filename/"
   pages = "/:filename/"
+  running = "/running/:year/:month/:day/"
 [params]
   repo = "https://github.com/housne/note"
   description = "Harry 的日常笔记"

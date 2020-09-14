@@ -1,0 +1,49 @@
+{{ with .Get 0 }}
+  {{ $date := . }}
+  {{ $year := substr $date 0 4 }}
+  {{ $month := substr $date 5 2 }}
+  {{ with index $.Page.Site.Data.running $year $month }}
+    {{ $times := len . }}
+    {{ $distance := 0 }}
+    {{ $duration := 0 }}
+    {{ $heartRate := 0 }}
+    <table>
+      <thead>
+        <tr>
+          <td>日期</td>
+          <td>距离(公里)</td>
+          <td>时长(分钟)</td>
+          <td>配速(分/公里)</td>
+          <td>心率(次/分钟)</td>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range $key, $val := . }}
+        {{ $distance = add $distance .distance }}
+        {{ $duration = add $duration .duration }}
+        {{ $heartRate = add $heartRate .heartRate }}
+        <tr>
+          <td>{{ $month }}-{{ $key }}</td>
+          <td>{{ .distance }}</td>
+          <td>{{ .duration }}</td>
+          {{ $minutes := math.Floor (div .duration .distance) }}
+          {{ $seconds := mul (div (mod .duration .distance) .distance) 60 }}
+          <td>{{ $minutes }}'{{ math.Floor $seconds }}''</td>
+          <td>{{ .heartRate }}</td>
+        </tr>
+        {{ end }}
+        <tr>
+          <td>统计</td>
+          <td>{{ lang.NumFmt 2 $distance }}</td>
+          <td>{{ $duration }}</td>
+          {{ $minutes := math.Floor (div $duration $distance) }}
+          {{ $seconds := mul (div (mod $duration $distance) $distance) 60 }}
+          <td>{{ $minutes }}'{{ math.Floor $seconds }}''</td>
+          <td>{{ div $heartRate $times }}</td>
+        </tr>
+      </tbody>
+    </table>
+  {{ else }}
+  {{ errorf "missing value for running record: %s-%s" $year $month }}
+  {{ end }}
+{{ end }}

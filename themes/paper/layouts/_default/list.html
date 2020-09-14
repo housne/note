@@ -33,17 +33,21 @@
 <footer class="page-footer">
   <nav class="pagination">
     {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL }}">{{ i18n "prev_page" }}</a>
+    <a class="button btn-outline prev" href="{{ $paginator.Prev.URL }}">{{ i18n "prev_page" }}</a>
+    {{ else }}
+    <span class="button btn-outline disabled prev">{{ i18n "prev_page" }}</span>
     {{- end }}
     {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" }}</a>
+    <a class="button btn-outline" href="{{ $paginator.Next.URL }}">{{ i18n "next_page" }}</a>
+    {{ else }}
+    <span class="button btn-outline disabled">{{ i18n "next_page" }}</span>
     {{- end }}
   </nav>
 </footer>
 {{- end }}
 
 {{ if .Data.Plural }}
-  <a class="button" href="{{ "/" | relLangURL}}{{ .Data.Plural | urlize }}">All {{.Data.Plural}}</a>
+  <a class="button btn-outline" href="{{ "/" | relLangURL}}{{ .Data.Plural | urlize }}">All {{.Data.Plural}}</a>
 {{ end }}
 
 {{ end }}

@@ -132,6 +132,8 @@ textarea {
 input:-webkit-autofill,
 textarea:-webkit-autofill {
   box-shadow: 0 0 0 50px var(--theme) inset;
+  color: var(--primary);
+  background: var(--entry);
 }
 img {
   display: block;
@@ -143,6 +145,11 @@ input, textarea {
   padding: 3px 10px;
   border-radius: 4px;
   color: var(--primary);
+}
+input:focus, textarea:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  outline: 0;
 }
 /* Header
 -------------------------------------------------- */
@@ -203,22 +210,20 @@ input, textarea {
 }
 .pagination {
   display: flex;
+  padding: var(--gap) 0 0;
 }
-.pagination a {
+/* .pagination a {
   color: var(--theme);
   font-size: 13px;
   line-height: 36px;
   background: var(--primary);
   border-radius: calc(36px / 2);
-}
+} */
 .pagination .prev {
-  padding-left: 16px;
-  padding-right: 18px;
+  margin-right: 10px;
 }
 .pagination .next {
-  margin-left: auto;
-  padding-left: 18px;
-  padding-right: 16px;
+  
 }
 
 /* Footer
@@ -230,7 +235,7 @@ input, textarea {
   padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
   color: var(--secondary);
   font-size: 12px;
-  text-align: center;
+  /* text-align: center; */
   line-height: 24px;
 }
 .footer span {
@@ -263,14 +268,45 @@ input, textarea {
   color: var(--primary);
   font-size: 1rem;
   line-height: 34px;
-  background: var(--code-bg);
+  border: solid 1px transparent;
+  background: #007bff;
+  border-color: #007bff;
+  color: #fff;
   border-radius: 4px;
   text-decoration: none;
 }
 
+.btn-outline {
+  background: transparent;
+  color: #007bff;
+}
+
+.button.disabled {
+  border-color: var(--secondary);
+  color: var(--secondary);
+  cursor: not-allowed;
+}
+.button.btn-outline.disabled:hover {
+  background: transparent;
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
 .button:hover {
-  background: var(--border);
+  background: #0069d9;
+  border-color: #0062cc;
+  color:#fff;
 }
 .button:disabled {
   color: var(--secondary);
+}
+table {
+  background: var(--entry);
+}
+table th, table td {
+  border: solid 1px var(--border);
+}
+.tag-button {
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
