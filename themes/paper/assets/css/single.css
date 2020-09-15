@@ -53,15 +53,6 @@
 .post-content h6 {
   font-size: 12px;
 }
-.post-content a {
-  box-shadow: 0 1px 0 var(--primary);
-}
-.post-content a code {
-  margin-left: 0;
-  margin-right: 0;
-  border-radius: 0;
-  box-shadow: 0 -1px 0 var(--primary) inset;
-}
 .post-content del {
   text-decoration: none;
   background: linear-gradient(to right, var(--primary) 100%, transparent 0) 0 50% / 1px 1px repeat-x;
@@ -168,6 +159,7 @@
   font-size: 0.9rem;
   line-height: 1.5;
   background: var(--code-bg);
+  color: rgba(255, 255, 255, 1);
   border-radius: 2px;
 }
 .post-content pre code {
@@ -194,6 +186,10 @@
 }
 .post-content iframe {
   max-width: 100%;
+}
+.post-content figure {
+  display: block;
+  text-align: center;
 }
 .post-footer {
   margin-top: var(--content-gap);

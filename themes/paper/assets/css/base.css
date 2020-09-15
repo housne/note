@@ -17,7 +17,7 @@
   --content: rgba(0, 0, 0, 0.88);
 
   --hljs-bg: #1c1d21;
-  --code-bg: #fff;
+  --code-bg: #1c1d21;
   --border: #eee;
 }
 .dark {
@@ -136,7 +136,7 @@ textarea:-webkit-autofill {
   background: var(--entry);
 }
 img {
-  display: block;
+  display: inline-block;
   max-width: 100%;
 }
 input, textarea {

@@ -43,7 +43,7 @@ setTimeout(() => console.log(startRecord()), 100); // 100
 
 高阶组件类似于高阶函数，只是函数改为了 React 组件(实际上 React 组件也是一个函数)。例如我们要实现一个普通的倒计时组件
 
-```javascript
+```jsx
 class Countdown extends React.Component {
   constructor(props) {
     super(props);
@@ -74,7 +74,7 @@ class Countdown extends React.Component {
     const seconds = totalSeconds % 60;
     return (
       <time>
-        <span>{ hours }
+        <span>{ hours }</span>
         <span>{ minutes }</span>
         <span>{ seconds }</span>
       </time>
@@ -85,7 +85,7 @@ class Countdown extends React.Component {
 
 上面的组件根据`remaining`属性，计算出倒计时的时、分、秒，但如果我们需要一个更抽象的组件，并不需要输出固定的 DOM 结构，这时候我们就可以借助高阶组件。
 
-```javascript
+```jsx
 function countdown(remaining, WrapperComponent) {
   return class extends React.Component {
     constructor(props) {
@@ -129,11 +129,11 @@ function countdown(remaining, WrapperComponent) {
 
 调用方式
 
-```javascript
+```jsx
 function Timer({ hour, minutes, seconds }) {
   return (
     <time>
-      <span>{ hours }
+      <span>{ hours }</span>
       <span>{ minutes }</span>
       <span>{ seconds }</span>
     </time>

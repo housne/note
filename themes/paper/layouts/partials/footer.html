@@ -9,12 +9,6 @@
 <script>
   {{ $themeSwitcherJS.Content | safeJS }}
 </script>
-{{- if .IsPage }}
-<script src="{{ "highlight.min.js" | absURL }}"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
-{{- end }}
 {{ if not (eq .Hugo.Environment "development") }}
 <script>
 // Check that service workers are supported
