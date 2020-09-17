@@ -21,7 +21,15 @@
       </tr>
       <tr>
         <td width="25%">心率</td>
-        <td width="75%">{{ .heartRate }} 次/分</td>
+        <td width="75%">{{ .heartRate }} 次/分钟</td>
+      </tr>
+      <tr>
+        <td width="25%">步数</td>
+        <td width="75%">{{ .steps }} 步</td>
+      </tr>
+      <tr>
+        <td width="25%">步频</td>
+        <td width="75%">{{ math.Floor (div .steps .duration) }} 步/分钟</td>
       </tr>
     </table>
   {{ else }}
