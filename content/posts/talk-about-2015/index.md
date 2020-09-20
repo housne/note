@@ -3,8 +3,7 @@ title: 说说 2015
 date: 2015-12-31T00:00:00+08:00
 path: /talk-about-2015
 tags:
-  - log
-  - work
+  - 工作
 layout: post
 cover: /images/cover/react-hooks.png
 ---

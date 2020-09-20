@@ -59,7 +59,7 @@ echo_supervisord_conf > /etc/supervisord.conf
 
 修改 supervisord.conf 文件，通过添加 [program:name] 来新建一个任务，例如：
 
-```bash
+```conf
 [program:tornado]
 directory=/home/user/website/example.com
 command=python server.py
@@ -70,7 +70,7 @@ stderr_log=/var/log/example.com/err.log
 
 但我们利用了 virtualenv 来生成了不同的虚拟环境，这里的 command 直接是 python server.py 的肯定是会出错的，所以我们需要改成这样：
 
-```bash
+```conf
 [program:tornado]
 directory=/home/user/website/example.com
 command=/home/user/website/example.com/ENV/bin/python server.py
