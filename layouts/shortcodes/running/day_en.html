@@ -6,30 +6,30 @@
   {{ with index $.Page.Site.Data.running $year $month $day }}
     <table class="day-running-table">
       <tr>
-        <td width="25%">距离</td>
+        <td width="25%">Distance</td>
         <td width="75%">{{ .distance }} KM</td>
       </tr>
       <tr>
-        <td width="25%">时长</td>
-        <td width="75%">{{ .duration }} 分钟</td>
+        <td width="25%">Duration</td>
+        <td width="75%">{{ .duration }} minutes</td>
       </tr>
       <tr>
-        <td width="25%">配速</td>
+        <td width="25%">Pace</td>
         {{ $minutes := math.Floor (div .duration .distance) }}
         {{ $seconds := mul (div (mod .duration .distance) .distance) 60 }}
         <td width="75%">{{ $minutes }}'{{ math.Floor $seconds }}''</td>
       </tr>
       <tr>
-        <td width="25%">心率</td>
-        <td width="75%">{{ .heartRate }} 次/分钟</td>
+        <td width="25%">Heart Rate</td>
+        <td width="75%">{{ .heartRate }} BPM</td>
       </tr>
       <tr>
-        <td width="25%">步数</td>
+        <td width="25%">Steps</td>
         <td width="75%">{{ .steps }}</td>
       </tr>
       <tr>
-        <td width="25%">步频</td>
-        <td width="75%">{{ math.Floor (div .steps .duration) }} 步/分钟</td>
+        <td width="25%">Cadence</td>
+        <td width="75%">{{ math.Floor (div .steps .duration) }} SPM</td>
       </tr>
     </table>
   {{ else }}

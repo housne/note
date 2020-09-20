@@ -128,6 +128,7 @@
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
+  overflow-x: auto;
 }
 /* table */
 .post-content .highlighttable {
@@ -170,6 +171,7 @@
   color: rgba(255, 255, 255, 0.8);
   background: transparent;
   border-radius: 0;
+  overflow-x: auto;
 }
 .post-content blockquote {
   margin: 0 0 0 calc(var(--gap) * -1);

@@ -1,6 +1,6 @@
 ---
 title: jsonp 原理
-date: 2014-05-13T00:00:00+08:00
+date: 2014-05-13T02:53:05.000Z
 path: /principle-of-jsonp
 tags:
     - javascript

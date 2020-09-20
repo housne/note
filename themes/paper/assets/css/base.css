@@ -11,6 +11,7 @@
 
   --theme: #f5f5f5;
   --entry: #fff;
+  --sub-entry: #fafafa;
   --primary: rgba(0, 0, 0, 0.88);
   --secondary: rgba(0, 0, 0, 0.56);
   --tertiary: rgba(0, 0, 0, 0.16);
@@ -309,4 +310,7 @@ table th, table td {
 .tag-button {
   margin-bottom: 10px;
   margin-right: 10px;
+}
+.day-running-table tr td:first-child {
+  background: var(--sub-entry);
 }

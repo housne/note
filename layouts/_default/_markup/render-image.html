@@ -1,14 +1,39 @@
 {{ $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) }}
+{{ $originImage := $image }}
 {{ if $image -}} 
-  {{ $alt := .PlainText | safeHTML }}{{ $caption := "" }}{{ with .Title }}{{ $caption = . | safeHTML }}{{ end }}
-  {{ $iw := $image.Width }}{{ $ih := $image.Height }}{{ $mw := site.Params.Images.maxWidth | default 1024}}
-  {{ if (ge $iw $mw) }}{{ $image = $image.Resize (print $mw "x") }}{{end}}
-  {{ $srcset := slice }}{{ range site.Params.Images.setSizes -}}
-    {{ if lt (mul . 1.2) $iw }}{{ $size := print  . "x" .}}{{ $thumb := $image.Fit $size }}{{ $srcset = $srcset | append (printf ("%s %dw") $thumb.RelPermalink $thumb.Width ) }}{{ end }}
+  {{ $alt := .PlainText | safeHTML }}
+  {{ $caption := "" }}
+  {{ with .Title }}
+    {{ $caption = . | safeHTML }}
+  {{ end }}
+  {{ $iw := $image.Width }}
+  {{ $ih := $image.Height }}
+  {{ $mw := site.Params.Images.maxWidth | default 1024 }}
+  {{ if (ge $iw $mw) }}
+    {{ $image = $image.Resize (print $mw "x") }}
+  {{end}}
+  {{ $srcset := slice }}
+  {{ range site.Params.Images.setSizes -}}
+    {{ if lt (mul . 1.2) $iw }}
+      {{ $size := print  . "x" .}}
+      {{ $thumb := $image.Fit $size }}
+      {{ $srcset = $srcset | append (printf ("%s %dw") $thumb.RelPermalink $thumb.Width ) }}
+    {{ end }}
   {{- end }}
   <figure>
-  <img loading=lazy  src={{ $image.RelPermalink }} sizes={{site.Params.Images.sizes }}
-  {{ if gt (len $srcset) 0 }}{{ $sl := delimit $srcset ", "}}srcset="{{$sl}}" {{ end }}
-  width={{ $image.Width }} height=auto alt="{{ if $alt }}{{ $alt }}{{ else if $caption }}{{ $caption | markdownify | plainify }}{{ else }}&nbsp;{{ end }}" >{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+  <a href="{{ $originImage.RelPermalink }}" target="_blank">
+    <img 
+      loading=lazy 
+      src={{ $image.RelPermalink }} 
+      sizes={{site.Params.Images.sizes }}
+      {{ if gt (len $srcset) 0 }}{{ $sl := delimit $srcset ", "}}srcset="{{$sl}}" {{ end }}
+      width={{ $image.Width }}
+      height=auto 
+      alt="{{ if $alt }}{{ $alt }}{{ else if $caption }}{{ $caption | markdownify | plainify }}{{ else }}&nbsp;{{ end }}"
+    >
+    {{ with $caption }}
+      <figcaption>{{ . | markdownify }}</figcaption>
+    {{ end }}
+  </a>
   </figure>
 {{- end }}
