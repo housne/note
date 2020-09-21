@@ -42,3 +42,9 @@
 
 - id: commentFailMessage
   translation: "发表失败，请稍后重试"
+
+- id: light
+  translation: "浅色"
+
+- id: dark
+  translation: "深色"

@@ -1,5 +1,5 @@
 baseURL: https://note.goharry.dev
-title: Harry's Note
+title: Harry
 theme: paper
 enableGitInfo: true
 enableRobotsTXT: true
@@ -25,13 +25,11 @@ languages:
   zh:
     languageName: 中文
     languageCode: zh-cn
-    title: Harry 的笔记
     hasCJKLanguage: true
     weight: 0
   en:
     languageName: English
     languageCode: en-us
-    title: Harry's Note
     weight: 1
 
 

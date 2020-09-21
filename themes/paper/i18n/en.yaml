@@ -48,3 +48,9 @@
 
 - id: distance
   translation: "Distance"
+
+- id: light
+  translation: "Light"
+
+- id: dark
+  translation: "Dark"

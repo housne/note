@@ -264,12 +264,13 @@ input:focus, textarea:focus {
   font-weight: 700;
 }
 .button {
-  display: inline-block;
+  display: inline-flex;
   padding-left: 14px;
   padding-right: 14px;
   color: var(--primary);
   font-size: 1rem;
-  line-height: 34px;
+  height: 34px;
+  align-items: center;
   border: solid 1px transparent;
   background: #007bff;
   border-color: #007bff;
@@ -299,6 +300,10 @@ input:focus, textarea:focus {
   border-color: #0062cc;
   color:#fff;
 }
+.button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,.5);
+}
 .button:disabled {
   color: var(--secondary);
 }
@@ -314,4 +319,17 @@ table th, table td {
 }
 .day-running-table tr td:first-child {
   background: var(--sub-entry);
+}
+.color-switch-button svg {
+  margin-right: 5px;
+}
+.color-switch-button.dark:hover {
+  background: #1d1e20;
+  border-color: #1d1e20;
+  color: #fff;
+}
+.color-switch-button.light:hover {
+  background:#f5f5f5;
+  border-color:#f5f5f5;
+  color: rgba(0, 0, 0, 0.88);
 }

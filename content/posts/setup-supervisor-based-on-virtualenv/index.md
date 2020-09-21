@@ -18,7 +18,7 @@ virtualenv 是 python 的一个虚拟环境管理工具，用来部署运行不�
 
 ## 安装配置 virtualenv
 
-```bash
+```bash 
 pip install virtualenv
 ```
 

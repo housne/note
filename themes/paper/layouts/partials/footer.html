@@ -2,13 +2,7 @@
   <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ .Site.Title }}</a></span>
   <span>&middot;</span>
   <span>Based on Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
-  <button id="theme-switcher"></button>
 </footer>
-{{ $opts := dict "minify" "true" }}
-{{ $themeSwitcherJS := resources.Get "js/theme-switcher.js" | js.Build $opts }}
-<script>
-  {{ $themeSwitcherJS.Content | safeJS }}
-</script>
 {{ if not (eq .Hugo.Environment "development") }}
 <script>
 // Check that service workers are supported
