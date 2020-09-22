@@ -261,6 +261,10 @@
 .comment-list {
   padding-top: 1rem;
 }
+.edit-link {
+  color: var(--primary);
+  text-decoration: underline;
+}
 
 @media (max-width: 640px) {
   .staticman-form .input-row {

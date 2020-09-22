@@ -20,6 +20,7 @@
   --hljs-bg: #1c1d21;
   --code-bg: #1c1d21;
   --border: #eee;
+  --link-color: #007bff;
 }
 .dark {
   --theme: #1d1e20;
@@ -97,7 +98,10 @@ ul {
   padding: 0;
 }
 a {
-  color: var(--primary);
+  color: var(--link-color);
+  text-decoration: none;
+}
+a:hover {
   text-decoration: underline;
 }
 a:active {
@@ -166,6 +170,7 @@ input:focus, textarea:focus {
   line-height: var(--header-height);
   text-decoration: none;
   margin-left: var(--gap);
+  color: var(--primary);
 }
 .logo,
 .menu {
@@ -181,6 +186,7 @@ input:focus, textarea:focus {
   font-weight: 600;
   text-decoration: none;
   margin: 0;
+  color: var(--primary);
 }
 .menu {
   display: flex;
@@ -192,7 +198,8 @@ input:focus, textarea:focus {
   margin-left: var(--gap);
 }
 .menu a {
-  font-size: 16px;
+  font-size: 1rem;
+  color: var(--primary);
 }
 /* Main
 -------------------------------------------------- */
@@ -272,8 +279,8 @@ input:focus, textarea:focus {
   height: 34px;
   align-items: center;
   border: solid 1px transparent;
-  background: #007bff;
-  border-color: #007bff;
+  background: var(--link-color);
+  border-color: var(--link-color);
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
@@ -281,7 +288,7 @@ input:focus, textarea:focus {
 
 .btn-outline {
   background: transparent;
-  color: #007bff;
+  color: var(--link-color);
 }
 
 .button.disabled {
@@ -299,6 +306,7 @@ input:focus, textarea:focus {
   background: #0069d9;
   border-color: #0062cc;
   color:#fff;
+  text-decoration: none;
 }
 .button:focus {
   outline: 0;

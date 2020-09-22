@@ -59,3 +59,6 @@
   display: block;
   text-decoration: none;
 }
+.entry-link:hover {
+  text-decoration: none;
+}
