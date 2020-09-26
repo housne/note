@@ -23,7 +23,7 @@
   {{ $listStyle := resources.Get "css/list.css" | resources.Minify }}
   <style type="text/css">
     {{ $baseCSS.Content | safeCSS }}
-    {{- if .IsPage }}
+    {{- if or .IsPage (eq .Section "running") }}
     {{ $singleStyle.Content | safeCSS }}
     {{- end }}
     {{- if .IsNode}}

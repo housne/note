@@ -331,13 +331,21 @@ table th, table td {
 .color-switch-button svg {
   margin-right: 5px;
 }
-.color-switch-button.dark:hover {
+.color-switch-button.dark {
   background: #1d1e20;
   border-color: #1d1e20;
   color: #fff;
 }
-.color-switch-button.light:hover {
+.color-switch-button.light {
   background:#f5f5f5;
   border-color:#f5f5f5;
   color: rgba(0, 0, 0, 0.88);
+}
+.running-table {
+  width: calc(100% + var(--gap) * 2);
+  margin: 0 calc(var(--gap) * -1);
+  overflow-x: auto;
+}
+.running-table th {
+  white-space: nowrap;
 }

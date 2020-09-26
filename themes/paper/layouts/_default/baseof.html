@@ -3,11 +3,6 @@
   {{- partial "head.html" . }}
   <body class="{{ .Site.Language.Lang }}">
     {{- partial "header.html" . }}
-    {{ $opts := dict "minify" "true" }}
-    {{ $themeJS := resources.Get "js/theme.js" | js.Build $opts }}
-    <script>
-      {{ $themeJS.Content | safeJS }}
-    </script>
     <main class="main">
       {{ block "main" . }}{{ end }}
     </main>

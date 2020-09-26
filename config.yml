@@ -9,7 +9,6 @@ Paginate: 5
 permalinks:
   posts: /:year/:month/:filename/
   pages: /:filename/
-  running: /running/:year/:month/:day/
 
 params:
   repo: https://github.com/housne/note
