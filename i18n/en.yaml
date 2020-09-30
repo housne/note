@@ -1,3 +1,27 @@
+- id: distance
+  translation: "Distance"
+
+- id: duration
+  translation: "Duration"
+
+- id: pace
+  translation: "Pace"
+
+- id: heartRate
+  translation: "Heart Rate"
+
+- id: steps
+  translation: "Steps"
+
+- id: cadence
+  translation: "Cadence"
+
+- id: bpm
+  translation: "BPM"
+
+- id: spm
+  translation: "SPM"
+
 - id: prev_page
   translation: "Prev Page"
 
@@ -54,3 +78,6 @@
 
 - id: dark
   translation: "Dark"
+
+- id: search
+  translation: "Search"

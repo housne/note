@@ -26,7 +26,7 @@
     {{- if or .IsPage (eq .Section "running") }}
     {{ $singleStyle.Content | safeCSS }}
     {{- end }}
-    {{- if .IsNode}}
+    {{- if or .IsNode (eq .Params.Layout "search")}}
     {{ $listStyle.Content | safeCSS }}
     {{- end }}
   </style>

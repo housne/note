@@ -1,3 +1,27 @@
+- id: distance
+  translation: "距离"
+
+- id: duration
+  translation: "时长"
+
+- id: pace
+  translation: "配速"
+
+- id: heartRate
+  translation: "心率"
+
+- id: steps
+  translation: "步数"
+
+- id: cadence
+  translation: "步频"
+
+- id: bpm
+  translation: "次/分钟"
+
+- id: spm
+  translation: "步/分钟"
+
 - id: prev_page
   translation: "上一页"
 
@@ -48,3 +72,6 @@
 
 - id: dark
   translation: "深色"
+
+- id: search
+  translation: "搜索"

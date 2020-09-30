@@ -1,6 +1,5 @@
 baseURL: https://note.goharry.dev
 title: Harry
-theme: paper
 enableGitInfo: true
 enableRobotsTXT: true
 DefaultContentLanguage: zh
@@ -16,9 +15,6 @@ params:
   staticmanURL: https://comment-goharry.herokuapp.com/v2/entry/housne/note/master/comments
   images:
     maxWidth: 688
-  
- 
-  
 
 languages:
   zh:
@@ -30,6 +26,18 @@ languages:
     languageName: English
     languageCode: en-us
     weight: 1
+
+outputFormats:
+  SearchIndex:
+    mediaType: "application/json"
+    baseName: "searchindex"
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home: ["HTML","RSS", "SearchIndex", "JSON"]
+  section: ["HTML", "RSS", "JSON"]
+  term: ["HTML", "RSS", "JSON"]
 
 
 

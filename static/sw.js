@@ -33,5 +33,6 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
     /.+\.(js|css|png|gif|jpg|jpeg)/,
     staticFileHandler
   )
+
 }()
 

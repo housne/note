@@ -349,3 +349,32 @@ table th, table td {
 .running-table th {
   white-space: nowrap;
 }
+.search-mask {
+  background: var(--entry);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  display: none;
+  top: 0; 
+  left: 0;
+  z-index: 9;
+  padding-top: 20vh;
+}
+.search-input {
+  border: none;
+  border-bottom: solid 1px var(--border);
+  border-radius: 0;
+  font-size: 1.5rem;
+  width: 60vw;
+}
+.search-input:focus {
+  box-shadow: none;
+  border-color: var(--primary);
+}
+.close-search-icon {
+  position: absolute;
+  top: var(--gap);
+  right: var(--gap);
+  cursor: pointer;
+}
