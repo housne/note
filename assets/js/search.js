@@ -1,5 +1,4 @@
 (async () => {
-  console.log(SEARCH_PAGE_PREFIX)
   const searchIndexFile = 'searchindex.json'
   const searchIndexURL = `${SEARCH_PAGE_PREFIX}${searchIndexFile}`;
   const searchRequest = await fetch(searchIndexURL)
@@ -66,7 +65,7 @@ function getSearchTermFromURL(key) {
     const [key, value] = term.split('=')
     return {
       ...terms,
-      [key]: value
+      [decodeURIComponent(key)]: decodeURIComponent(value)
     }
   }, {})
   if (key) {

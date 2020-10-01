@@ -39,7 +39,7 @@
         {{ if eq .Lang "zh"}}
           {{ $relURL = "" }}
         {{ end }}
-      <a href="/{{$relURL}}" class="i18n-link">{{ .LanguageName }}</a>
+      <a href="/{{$relURL}}" class="i18n-link" style="font-size: 1.5rem">{{ .LanguageName }}</a>
       {{ end }}
     {{ end }}
     <span style="display: flex; align-items: center; padding-left: var(--gap)">

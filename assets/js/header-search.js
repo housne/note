@@ -11,6 +11,8 @@ closeSearchButton.addEventListener('click', hideSearch)
 
 function showSearch() {
   searchLayout.style.display = 'flex'
+  document.body.style.overflow = 'hidden'
+  document.body.style.height = '100vh'
   searchInput.focus()
   isSearchShowed = true
 }
@@ -18,6 +20,8 @@ function showSearch() {
 function hideSearch() {
   searchLayout.style.display = ''
   searchInput.value = ''
+  document.body.style.overflow = ''
+  document.body.style.height = ''
   isSearchShowed = false
 }
 
