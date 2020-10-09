@@ -42,9 +42,9 @@ if ('share' in navigator) {
   </svg>`
   nativeShareButton.addEventListener('click', () => {
     navigator.share({
-      url: SHARE_URL,
-      text: SHARE_TITLE,
-      title: SHARE_TITLE
+      url: decodeURIComponent(SHARE_URL),
+      text: decodeURIComponent(SHARE_TITLE),
+      title: decodeURIComponent(SHARE_TITLE)
     })
   })
   shareSectionElement.appendChild(nativeShareButton)

@@ -295,6 +295,8 @@
   justify-content: center;
 }
 .share-post .native-share-button {
+  width: 26px;
+  height: 26px;
   border: solid 2px var(--secondary);
   border-radius: 50%;
 }
