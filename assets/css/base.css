@@ -325,8 +325,9 @@ table th, table td {
   margin-bottom: 10px;
   margin-right: 10px;
 }
-.day-running-table tr td:first-child {
+.running-table th {
   background: var(--sub-entry);
+  font-weight: normal;
 }
 .color-switch-button svg {
   margin-right: 5px;

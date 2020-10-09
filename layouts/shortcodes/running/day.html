@@ -4,31 +4,31 @@
   {{ $month := substr $date 5 2 }}
   {{ $day := substr $date 8 2 }}
   {{ with index $.Page.Site.Data.running $year $month $day }}
-    <table class="day-running-table">
+    <table class="day-running-table running-table">
       <tr>
-        <td width="25%">距离</td>
+        <th width="25%">距离</th>
         <td width="75%">{{ .distance }} KM</td>
       </tr>
       <tr>
-        <td width="25%">时长</td>
+        <th width="25%">时长</th>
         <td width="75%">{{ .duration }} 分钟</td>
       </tr>
       <tr>
-        <td width="25%">配速</td>
+        <th width="25%">配速</th>
         {{ $minutes := math.Floor (div .duration .distance) }}
         {{ $seconds := mul (div (mod .duration .distance) .distance) 60 }}
         <td width="75%">{{ $minutes }}'{{ math.Floor $seconds }}''</td>
       </tr>
       <tr>
-        <td width="25%">心率</td>
+        <th width="25%">心率</th>
         <td width="75%">{{ .heartRate }} 次/分钟</td>
       </tr>
       <tr>
-        <td width="25%">步数</td>
+        <th width="25%">步数</th>
         <td width="75%">{{ .steps }}</td>
       </tr>
       <tr>
-        <td width="25%">步频</td>
+        <th width="25%">步频</th>
         <td width="75%">{{ math.Floor (div .steps .duration) }} 步/分钟</td>
       </tr>
     </table>
