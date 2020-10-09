@@ -283,8 +283,8 @@
 }
 .share-post button {
   outline: 0;
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   padding: 0;
   margin: 0;
   border: none;
@@ -295,8 +295,6 @@
   justify-content: center;
 }
 .share-post .native-share-button {
-  width: 26px;
-  height: 26px;
   border: solid 2px var(--secondary);
   border-radius: 50%;
 }
