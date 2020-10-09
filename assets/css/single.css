@@ -203,7 +203,7 @@
   margin-left: 3px;
 }
 .post-data {
-  margin-top: 56px;
+  margin-top: calc(var(--gap) * 1.5);
   color: var(--secondary);
   font-size: 14px;
 }
@@ -274,5 +274,37 @@
   .staticman-form .input-row input {
     width: 100%;
     margin-bottom: 10px;
+  }
+}
+
+.share-post {
+  display: flex;
+  padding-top: calc(var(--gap) * 2);
+}
+.share-post button {
+  outline: 0;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  margin-right: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.share-post .native-share-button {
+  border: solid 2px var(--secondary);
+  border-radius: 50%;
+}
+
+.share-post button:active {
+  opacity: 0.8;
+}
+
+@media (max-width: 640px) {
+  .share-post {
+    width: 70%;
   }
 }
