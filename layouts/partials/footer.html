@@ -1,7 +1,7 @@
 <footer class="footer">
   <span>&copy; {{ now.Year }} <a href="{{ "" | absURL }}">{{ .Site.Title }}</a></span>
   <span>&middot;</span>
-  <span>Based on Theme️ <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper</a></span>
+  {{ with .Site.GetPage "/pages/about" }}<span><a href="{{.RelPermalink}}">{{ .Title }}</a></span>{{ end }}
 </footer>
 {{ if not (eq .Hugo.Environment "development") }}
 <script>
