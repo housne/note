@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<article class="post-single">
+<article class="post-single" id="post_single">
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
     <div class="post-meta">
@@ -9,7 +9,7 @@
       {{- .Date.Format "2006-01-02" -}}
     </div>
   </header>
-  <div class="post-content">{{ .Content }}</div>
+  <div class="post-content" id="post_content">{{ .Content }}</div>
   <footer class="post-footer">
     {{- if .Params.tags }}
     <ul class="post-tags">
@@ -52,4 +52,9 @@
   {{- end }}
 </article>
 {{- partial "staticman.html" . }}
+{{ $opts := dict "minify" "true" }}
+{{ $TOC_JS := resources.Get "js/toc.js" | js.Build $opts }}
+<script>
+  {{ $TOC_JS.Content | safeJS }}
+</script>
 {{ end }}

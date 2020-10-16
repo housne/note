@@ -302,3 +302,79 @@
 .share-post button:active {
   opacity: 0.8;
 }
+
+@media (max-width: 960px) {
+  .post-toc {
+    display: none;
+  }
+}
+.post-toc {
+  position: fixed;
+  top: 220px;
+  left: 50%;
+  margin-left: 400px;
+}
+
+.toc-heading.active a {
+  opacity: 1;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toc-heading.active .pill {
+  opacity: 1;
+}
+
+.post-toc:hover .toc-heading a {
+  opacity: 0.5;
+}
+
+.toc-heading {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.toc-heading a {
+  color: var(--secondary);
+  opacity: 0;
+}
+
+.toc-heading a:hover {
+  text-decoration: none;
+  opacity: 1 !important;
+}
+
+.toc-heading .pill {
+  height: 4px;
+  width: 16px;
+  border-radius: 20px;
+  background: var(--secondary);
+  opacity: 0.3;
+  margin-right: 10px;
+}
+
+.toc-heading .pill-1 {
+  width: 20px;
+}
+
+.toc-heading .pill-2 {
+  width: 16px;
+  margin-right: 14px;
+}
+
+.toc-heading .pill-3 {
+  width: 10px;
+  margin-right: 20px;
+}
+
+.toc-heading .pill-4 {
+  width: 10px;
+  margin-right: 20px;
+}
+
+ 
