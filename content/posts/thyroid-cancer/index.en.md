@@ -19,7 +19,7 @@ Three days later, the puncture was not as painful as expected. After the anesthe
 
 Three days later, the result shows the tumor  is malignant, it's human papillary carcinoma of the thyroid. Fortunately, it is still very early and has not metastasized to the lymph. The doctor recommends surgery to remove half of the thyroid gland to avoid further deterioration of the metastasis. 
 
-![thyroid cancer](thyroid-cancer.jpeg)
+![thyroid cancer](thyroid-cancer.jpg)
 
 However, the hospital’s beds are tight and I need to wait for one to two weeks. After signup my phone number, I waited for the hospital to call me while I was at work. After more than a week, the hospital still didn’t call me. I called the hospital to inquire about the progress. I was a little anxious and registered another hospital. This hospital arranged for the next day of hospitalization and surgery next week.
 
@@ -31,7 +31,7 @@ The day of surgery, I was the first one, the nurse guided us to the surgery floo
 
 I vaguely heard someone calling my name when I woke up, then ask me to confirmed my name, I was unconscious and said my name with difficulty. then someone push me to my bed. I was already lying on the bed when I was awake, thinking about sending message to my friends and family that I was safe. So, I sent some message and fell asleep again.
 
-![Bed](bed.jpeg)
+![Bed](bed.jpg)
 
 ## Recovery after surgery
 

@@ -75,3 +75,12 @@
 
 - id: search
   translation: "搜索"
+
+- id: shareTo
+  translation: "分享到"
+
+- id: wechat
+  translation: "微信"
+
+- id: weibo
+  translation: "微博"

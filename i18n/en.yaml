@@ -81,3 +81,12 @@
 
 - id: search
   translation: "Search"
+
+- id: shareTo
+  translation: "Share To "
+
+- id: wechat
+  translation: "Wechat"
+
+- id: weibo
+  translation: "Weibo"
