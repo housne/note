@@ -40,7 +40,7 @@ function updateActiveHeading(index) {
 }
 
 function scrollHandler() {
-  const scrollTop = window.scrollY + window.innerHeight / 2
+  const scrollTop = window.scrollY
   const activeIndex = getCurrentActiveIndex(scrollTop)
   if (typeof activeIndex === 'undefined') {
     return

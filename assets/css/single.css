@@ -294,10 +294,6 @@
   align-items: center;
   justify-content: center;
 }
-.share-post .native-share-button {
-  border: solid 2px var(--secondary);
-  border-radius: 50%;
-}
 
 .share-post button:active {
   opacity: 0.8;

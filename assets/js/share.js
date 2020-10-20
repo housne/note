@@ -12,7 +12,7 @@ class Toast {
     this.toastTimer = setTimeout(() => {
       this.close()
       this.toastTimer = null
-    }, 5000)
+    }, 3000)
   }
   close() {
     try {
@@ -36,8 +36,9 @@ shareSectionElement.addEventListener('click', (event) => {
 if ('share' in navigator) {
   const nativeShareButton = document.createElement('button')
   nativeShareButton.className = 'native-share-button'
-  nativeShareButton.innerHTML = `<svg width="1rem" height="1rem" viewBox="0 0 16 16" class="bi bi-three-dots" fill="var(--secondary)" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+  nativeShareButton.innerHTML = `<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M3.5 6a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 1 0-1h2A1.5 1.5 0 0 1 14 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-8A1.5 1.5 0 0 1 3.5 5h2a.5.5 0 0 1 0 1h-2z"/>
+    <path fill-rule="evenodd" d="M7.646.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 1.707V10.5a.5.5 0 0 1-1 0V1.707L5.354 3.854a.5.5 0 1 1-.708-.708l3-3z"/>
   </svg>`
   nativeShareButton.addEventListener('click', () => {
     navigator.share({
