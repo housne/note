@@ -14,3 +14,9 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 {{ end }}
+
+{{ $opts := dict "minify" "true" }}
+{{ $preFetchJS := resources.Get "js/prefetch.js" | js.Build $opts }}
+<script>
+  {{ $preFetchJS.Content | safeJS }}
+</script>

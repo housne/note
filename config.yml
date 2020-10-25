@@ -3,7 +3,7 @@ title: Harry
 enableGitInfo: true
 enableRobotsTXT: true
 DefaultContentLanguage: zh
-Paginate: 5
+Paginate: 10
 
 permalinks:
   posts: /:year/:month/:filename/

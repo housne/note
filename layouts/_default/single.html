@@ -14,7 +14,7 @@
     {{- if .Params.tags }}
     <ul class="post-tags">
       {{- range .Params.tags }}
-      {{- $href := print (relLangURL "tags/") (urlize .) }}
+      {{- $href := print (relLangURL "tags/") (urlize .) "/"}}
       <li><a href="{{ $href }}" class="button btn-outline">{{ . }}</a></li>
       {{- end }}
     </ul>
