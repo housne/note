@@ -18,12 +18,12 @@ params:
 
 languages:
   zh:
-    languageName: 🇨🇳
+    languageName: 中文
     languageCode: zh-cn
     hasCJKLanguage: true
     weight: 0
   en:
-    languageName: 🇺🇸
+    languageName: English
     languageCode: en-us
     weight: 1
 

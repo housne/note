@@ -39,7 +39,7 @@
         {{ if eq .Lang "zh"}}
           {{ $relURL = "" }}
         {{ end }}
-      <a href="/{{$relURL}}" class="i18n-link" style="display: flex; align-items: center; cursor: pointer">
+      <a href="/{{$relURL}}" title="{{.LanguageName}}" class="i18n-link" style="display: flex; align-items: center; cursor: pointer">
         {{- partial "language_emoji.html" (dict "context" . "Lang" .Lang) }}
       </a>
       {{ end }}

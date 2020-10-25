@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
   tocMarkup.className = 'post-toc'
   document.querySelector('#post_single').appendChild(tocMarkup)
   const handlePageScroll = throttle(scrollHandler, 100)
-  window.addEventListener('scroll', handlePageScroll)
+  window.addEventListener('scroll', handlePageScroll, {passive: true})
 })
 
 
